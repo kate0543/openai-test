@@ -1,7 +1,8 @@
 import openai
 
-key='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'
-openai.api_key=key 
+with open('api_key.txt','r') as f:
+    key=f.read()
+openai.api_key=key
 
 def answer(query): 
     response = openai.Completion.create(
