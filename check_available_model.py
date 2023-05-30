@@ -1,6 +1,6 @@
 import openai
 
-with open('api_key.txt','r') as f:
+with open('api_key.dat','r') as f:
     key=f.read()
 openai.api_key=key
 
